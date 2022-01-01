@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0'
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     >
+  <channel>
+    <title>Abhiseck Paira's Webpage</title>
+    <language>en-us</language>
+    <link>https://abhiseck.neocities.org/blog.html</link>
+    <description>My Blog posts and News</description>
+    <atom:link href="https://abhiseck.neocities.org/rss.xml" rel="self"
+               type="application/rss+xml" />
+    <item>
+      <title>[BLOG: 20211024] First time contributing to GNU
+      Emacs</title>
+      <link>https://abhiseck.neocities.org/short-blogs.html#20211024-contribute-emacs</link>
+      <guid>https://abhiseck.neocities.org/short-blogs.html#20211024-contribute-emacs</guid>
+      <pubDate>Sun, Oct 24, 2021 12:10:00 +0000</pubDate>
+      <description>
+        Sorry, Due to some issues, the article isn't appearing in the
+        RSS feed. You have to visit the link to read it.
+      </description>
+    </item>
+  </channel>
+</rss>

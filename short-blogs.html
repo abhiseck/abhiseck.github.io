@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2021-11-04 Thu 12:16 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2021</title>
+<meta name="author" content="Abhiseck Paira" />
+<meta name="description" content="Abhiseck Paira's webpage" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">2021</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#2021-october">October</a>
+<ul>
+<li><a href="#20211024-contribute-emacs">[BLOG: 20211024] First time contributing to GNU Emacs</a>
+<ul>
+<li><a href="#orgc22772d">Initial work</a></li>
+<li><a href="#org43f4b66">Copyright Assignment</a></li>
+<li><a href="#orgd16069e">Co-authoring patch to GNU Emacs with Prot</a></li>
+</ul>
+</li>
+<li><a href="#20211023-emacs-guix">[BLOG: 20211023] Errors in Emacs-guix</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="./index.html">Go Back to Index page</a>.
+</p>
+
+<p>
+For Criticism and Comments, you know how to <a href="./index.html#index-contact">contact</a>. Try not to appear
+as Spam.
+</p>
+
+<p>
+Posts are in reverse chronological order.
+</p>
+
+<p>
+<a href="https://abhiseck.neocities.org/rss.xml">Subscribe</a> to RSS feed for updates.
+</p>
+
+<div id="outline-container-2021-october" class="outline-2">
+<h2 id="2021-october">October</h2>
+<div class="outline-text-2" id="text-2021-october">
+</div>
+<div id="outline-container-20211024-contribute-emacs" class="outline-3">
+<h3 id="20211024-contribute-emacs">[BLOG: 20211024] First time contributing to GNU Emacs</h3>
+<div class="outline-text-3" id="text-20211024-contribute-emacs">
+</div>
+
+<div id="outline-container-orgc22772d" class="outline-4">
+<h4 id="orgc22772d">Initial work</h4>
+<div class="outline-text-4" id="text-orgc22772d">
+<p>
+The first patch I've ever sent regarding Emacs was to <a href="https://protesilaos.com">Protesiloas
+Stavrou</a>'s (prot) dotemacs repository. I was reading Emacs Lisp manual,
+and I was getting bored. I thought it'd be good idea to read some real
+life Emacs Lisp code to learn more about how to apply these concepts.
+</p>
+
+<p>
+Many Emacs extension packages are hosted in proprietary Github. Though I
+have Github account I made in 2020, I rarely use it as it's
+proprietary. For the same reason I can't contribute to those Emacs
+extensions.
+</p>
+
+<p>
+Prot is one of the best youtubers that cover Emacs right now. Obviously
+I watch his videos. From his videos I found out he's written a lot of
+cool add-ons for various Emacs extensions. Even though his code is
+hosted Gitlab, most importantly he allows Email patches. so I started
+reading his code.
+</p>
+
+<p>
+During the read, I whenever I found some bug or whenever I could think
+of any feature, I sent the fix to him. He was kind enough to review
+those and accept them if appropriate. I mainly worked on his prot-eww.el
+file.
+</p>
+
+<p>
+I also sent a trivial patch Elpher, which is another cool project that
+accepts patches and work with mailing lists.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43f4b66" class="outline-4">
+<h4 id="org43f4b66">Copyright Assignment</h4>
+<div class="outline-text-4" id="text-org43f4b66">
+<p>
+One of the first step for contributing to GNU Emacs or ELPA packages is
+to assign copyright to <a href="https://www.fsf.org">FSF</a>. I knew I'll contribute to Emacs sooner or
+later so I thought it's good time to complete the paper work beforehand 
+instead of waiting.
+</p>
+
+<p>
+The process is simple but lengthy:
+</p>
+
+<ul class="org-ul">
+<li>You fill up a form and email it to FSF.</li>
+<li>Someone from FSF sends a PDF document by email.</li>
+<li>You sign that document, and send it back (if you are employed, you may
+a copyright disclaimer from your employer. See the FSF website for
+details).</li>
+</ul>
+
+<p>
+Whole process took nearly 3 weeks to complete.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd16069e" class="outline-4">
+<h4 id="orgd16069e">Co-authoring patch to GNU Emacs with Prot</h4>
+<div class="outline-text-4" id="text-orgd16069e">
+<p>
+After that, me and Prot started working on the buffer renaming
+feature. Prot had this feature in his prot-eww.el file for long time. It
+was very useful especially if you want to use EWW as your primary
+browser. You'll need a lot of buffers (same as you open tabs in your big
+browser). But the cool thing is, those EWW buffers are easily searchable
+using various completion frameworks.
+</p>
+
+<p>
+Anyways we proceeded slowly as Emacs 28 was just going to be "cut" from
+master branch. We were targeting Emacs 29.
+</p>
+
+<p>
+Then one day we noticed someone requesting the same feature in
+bug-emacs, so we talked with the co-maintainers and presented our patch,
+and it got accepted!
+</p>
+
+<p>
+Truly amazing feeling when your patch gets accepted. The feature should
+be available in Emacs 29. See Prot's <a href="https://protesilaos.com/codelog/2021-10-15-emacs-29-eww-rename-buffers/">blog post</a> for the details.
+</p>
+
+<p>
+Hopefully I'll get more opportunity to contribute to Emacs as well as
+other GNU packages in the coming days :).
+</p>
+
+<hr>
+</div>
+</div>
+</div>
+<div id="outline-container-20211023-emacs-guix" class="outline-3">
+<h3 id="20211023-emacs-guix">[BLOG: 20211023] Errors in Emacs-guix</h3>
+<div class="outline-text-3" id="text-20211023-emacs-guix">
+<p>
+One of the primary reasons for using <a href="https://guix.gnu.org">GNU Guix System</a> is it provides
+fantastic integration with other GNU components and most importantly
+with <a href="https://gnu.org/s/emacs">GNU Emacs</a>.
+</p>
+
+<p>
+There's an Emacs extension called Emacs-guix that can be used from
+within Emacs to control the guix cli tool.
+</p>
+
+<p>
+When I installed guix on a foreign distro (i.e., on <a href="https://parabola.nu">Parabola</a>), I
+couldn't use this package, it'd always throw me weird errors. I thought
+may be the emacs-guix has a bug.
+</p>
+
+<p>
+Then when I installed Guix System it still wouldn't work! But today I
+found out the solution of the problem. In order to use emacs-guix you
+need the following packages:
+</p>
+
+<ul class="org-ul">
+<li>guile</li>
+<li>emacs-geiser</li>
+<li>emacs (obviously)</li>
+<li>emacs-guix</li>
+<li>emacs-geiser-guile</li>
+</ul>
+
+<p>
+I had not installed emacs-geiser-guile that's why I was getting those
+weird errors. Finally I can enjoy guix from Emacs now!
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Abhiseck Paira</p>
+<p class="date">Created: 2021-11-04 Thu 12:16</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
